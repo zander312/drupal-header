@@ -1,54 +1,133 @@
-/*DESKTOP STYLES FOR REACT HEADER*/
+/*MOBILE STYLES FOR REACT HEADER*/
 
-
-.headerContainer {
-    background-color: green;
-    height: 7.3vw;
-    font-family: "Source Sans Pro";
+body {
+  margin: 0;
 }
 
-.header {
-    background-color: red;
-    height: 7.3vw;
-    width: 79.2vw;
-    margin: auto;
-    padding-top: 1.3vw;
-    box-sizing: border-box;
+.headerContainerNew {
+  /*background-color: green;*/
+  /*height: 7.3vw;*/
+  font-family: "Source Sans Pro";
+  width: 100%;
+  /*border: 1px solid red;*/
 }
 
-.logo {
-    position: absolute;
-    height: 4.6vw;
-    left: 0;
+.mainHeaderNew {
+  height: 16vw;
 }
 
-.navbar{
-    position: relative;
-    width: 79.2vw;
-    height: 4.6vw;
-    margin-left: auto;
-    margin-right: auto;
+.logoNew {
+  position: absolute;
+  width: 32.533vw;
+  left: 5.33vw;
+  top: 3.2vw;
 }
 
-.miniNav{
-    position: absolute;
-    top: 0;
-    right: 0;
+.menuBtnNew {
+  position: absolute;
+  right: 5.33vw;
+  top: 3.2vw;
+  width: 24vw;
+  height: 9.6vw;
+  font-size: 3.2vw;
+  line-height: 9.6vw;
+  color: #0B97DD;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0.533vw solid #0B97DD;
 }
 
-.miniNav > a{
-    font-size: 1vw;
-    margin-left: 0.8vw;
+.menuBtnNew div{
+  height: 9.6vw;
+  margin-top: 0;
+  margin-left: 3.73vw;
+  width: 17.6vw;
 }
 
-.mainNav{
-    position: absolute;
-    bottom: 0.6vw;
-    right: 0;
+.menuBtnNew div img{
+  height: 3.466vw;
+  width: 4vw;
+  margin-left: 3.2vw;
+  margin-top: -0.8vw;
+  vertical-align: middle;
 }
 
-.mainNav > a {
-    font-size: 1.4vw;
-    font-weight: bold;
-    margin-left: 1.9vw;
+.mobileSearchNew{
+  width: 100%;
+}
+
+.mainNavNew {
+  width: 100%;
+}
+
+.mobileSearchContainerNew {
+  background-color: #EBEBEB;
+  height: 16vw;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.searchBtnNew {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  top: 5.9vw;
+  left: 8vw;
+  z-index: 1;
+}
+
+.searchIconNew {
+  height: 4vw;
+  width: auto;
+}
+
+
+
+.mobileSearchContainerNew input {
+  position: absolute;
+  margin-top: 2.93vw;
+  height: 10.13vw;
+  width: 89.33vw;
+  margin-left: 5.33vw;
+  font-size: 3.73vw;
+  line-height: 4.8vw;
+  color: #666666;
+  padding-left: 7.466vw;
+}
+
+.mainNavNew div a {
+  font-size: 4.8vw;
+  border-bottom: 0.266vw solid #DBDBDB;
+  padding-left: 12.8vw;
+  margin-left: 0;
+  text-decoration: none;
+  display: block;
+  height: 16vw;
+  line-height: 16vw;
+}
+
+.navLinkNew {
+  font-weight: bold;
+  color: #0B97DD;
+}
+
+.navLinkSpecialNew{
+  color: #666666;
+}
+
+.navLinkNearIconNew{
+  margin-right: 4vw;
+  height: 4.8vw;
+  width: auto;
+  vertical-align: middle;
+  padding-left: .6vw;
+  margin-top: -1.3vw;
+}
+
+.navLinkCalendarIconNew{
+  margin-right: 3.2vw;
+  height: 4.8vw;
+  width: auto;
+  vertical-align: middle;
+  margin-top: -1.3vw;
 }
