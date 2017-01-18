@@ -1,54 +1,71 @@
 /*DESKTOP STYLES FOR REACT HEADER*/
-
-
-.headerContainer {
-    background-color: green;
-    height: 7.3vw;
-    font-family: "Source Sans Pro";
+body {
+    width:960px;
+    margin: auto;
 }
 
 .header {
-    background-color: red;
-    height: 7.3vw;
-    width: 79.2vw;
+    background-color: white;
+    height: 103px;
+    width: 960px;
     margin: auto;
-    padding-top: 1.3vw;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*navbar container*/
+.navbar {
+    position: relative;
+    height: 103px;
+    width: 960px;
 }
 
 .logo {
     position: absolute;
-    height: 4.6vw;
+    width: 169px;
+    height: auto;
     left: 0;
+    bottom: 21px;
 }
 
-.navbar{
-    position: relative;
-    width: 79.2vw;
-    height: 4.6vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.miniNav{
+/*main nav bar*/
+.main-nav {
     position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.miniNav > a{
-    font-size: 1vw;
-    margin-left: 0.8vw;
-}
-
-.mainNav{
-    position: absolute;
-    bottom: 0.6vw;
-    right: 0;
-}
-
-.mainNav > a {
-    font-size: 1.4vw;
     font-weight: bold;
-    margin-left: 1.9vw;
+    bottom: 26px;
+    right: 0;
 }
+
+.main-nav > a {
+    color: #0B97DD;
+    font-size: 17px;
+    line-height: 18px;
+    margin-left: 14px;
+}
+
+.main-nav > a:first-child {
+    margin-left: 0;
+}
+
+/*mini nav bar*/
+.mini-nav{
+    position: absolute;
+    top: 29px;
+    right: 0;
+}
+
+.mini-nav > a {
+    color: #757575;
+    font-size: 13px;
+    line-height: 14px;
+    margin-left: 11px;
+}
+
+.mini-nav > i {
+    color: #757575;
+    font-size: 13px;
+    line-height: 14px;
+    margin-left: 11px;
+}
+
+
