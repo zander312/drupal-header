@@ -13,6 +13,7 @@
     width: 79.2vw;
     margin: auto;
     padding-top: 1.3vw;
+    box-sizing: border-box;
 }
 
 .logo {
