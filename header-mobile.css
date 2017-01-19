@@ -5,11 +5,8 @@ body {
 }
 
 .headerContainerNew {
-  /*background-color: green;*/
-  /*height: 7.3vw;*/
   font-family: "Source Sans Pro";
   width: 100%;
-  /*border: 1px solid red;*/
 }
 
 .mainHeaderNew {
@@ -37,13 +34,6 @@ body {
   border: 0.533vw solid #0B97DD;
 }
 
-/*.menuBtnNew div{
-  height: 9.6vw;
-  margin-top: 0;
-  margin-left: 3.73vw;
-  width: 17.6vw;
-}*/
-
 .menuBtnTextNew {
   height: 9.6vw;
   margin-top: 0;
@@ -57,7 +47,6 @@ body {
   margin-right: 3.466vw;
   margin-top: 3.2vw;
   float: right;
-  /*display: none;*/
 }
 
 .menuIconCloseNew{
