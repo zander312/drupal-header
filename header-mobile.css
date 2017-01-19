@@ -37,19 +37,36 @@ body {
   border: 0.533vw solid #0B97DD;
 }
 
-.menuBtnNew div{
+/*.menuBtnNew div{
   height: 9.6vw;
   margin-top: 0;
   margin-left: 3.73vw;
   width: 17.6vw;
+}*/
+
+.menuBtnTextNew {
+  height: 9.6vw;
+  margin-top: 0;
+  padding-left: 3.73vw;
+  float: left;
 }
 
-.menuBtnNew div img{
+.menuIconHamburgerNew{
   height: 3.466vw;
   width: 4vw;
-  margin-left: 3.2vw;
-  margin-top: -0.8vw;
-  vertical-align: middle;
+  margin-right: 3.466vw;
+  margin-top: 3.2vw;
+  float: right;
+  /*display: none;*/
+}
+
+.menuIconCloseNew{
+  height: 3.466vw;
+  width: 4vw;
+  margin-right: 3.466vw;
+  margin-top: 3.2vw;
+  float: right;
+  display: none;
 }
 
 .mobileSearchNew{
@@ -67,7 +84,7 @@ body {
   position: relative;
 }
 
-.searchBtnNew {
+.searchIconContainerNew {
   position: absolute;
   height: 4vw;
   width: 4vw;
@@ -91,6 +108,10 @@ body {
   line-height: 4.8vw;
   color: #666666;
   padding-left: 7.466vw;
+}
+
+.mainNavNew {
+  display: none;
 }
 
 .mainNavNew div a {
