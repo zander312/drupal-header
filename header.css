@@ -90,6 +90,7 @@ body {
   .mobile-main-header-new {
     height: 16vw;
     box-shadow: 0 0.266vw 0 0 #EBEBEB;
+    background-color: #ffffff;
   }
 
   .logo-new {
@@ -150,6 +151,7 @@ body {
   .main-nav-new {
     width: 100%;
     display: none;
+    background-color: #ffffff;
   }
 
   .mobile-search-container-new {
