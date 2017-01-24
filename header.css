@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 960px){
     .mobileHeaderContainerNew {
         display: none;
     }
@@ -76,159 +76,150 @@ body {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:959px) {
+  .header{
+    display: none;
+  }
 
-    .header{
-        display: none;
-    }
+  .mobile-header-container-new {
+    font-family: "Source Sans Pro";
+    width: 100%;
+    margin: 0;
+  }
 
-    body {
-        margin: 0;
-    }
+  .mobile-main-header-new {
+    height: 16vw;
+    box-shadow: 0 0.266vw 0 0 #EBEBEB;
+  }
 
-    .mobileHeaderContainerNew {
-        font-family: "Source Sans Pro";
-        width: 100%;
-    }
+  .logo-new {
+    position: absolute;
+    height: 9.6vw;
+    width: auto;
+    left: 5.33vw;
+    top: 3.2vw;
+  }
 
-    .mobileMainHeaderNew {
-        height: 16vw;
-        box-shadow: 0 0.266vw 0 0 #EBEBEB;
-    }
+  .menu-btn-new {
+    position: absolute;
+    right: 5.33vw;
+    top: 3.2vw;
+    /*width: 24vw;*/
+    /*height: 9.6vw;*/
+    width: 22.934vw;
+    height: 8.534vw;
+    font-size: 3.2vw;
+    line-height: 9.6vw;
+    color: #0B97DD;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.533vw solid #0B97DD;
+  }
 
-    .logoNew {
-        position: absolute;
-        height: 9.6vw;
-        width: auto;
-        left: 5.33vw;
-        top: 3.2vw;
-    }
+  .menu-btn-text-new {
+    color: #0B97DD;
+    height: 9.6vw;
+    margin-top: -.533vw;
+    padding-left: 3.73vw;
+    float: left;
+  }
 
-    .menuBtnNew {
-        position: absolute;
-        right: 5.33vw;
-        top: 3.2vw;
-        /*width: 24vw;*/
-        /*height: 9.6vw;*/
-        width: 22.934vw;
-        height: 8.534vw;
-        font-size: 3.2vw;
-        line-height: 9.6vw;
-        color: #0B97DD;
-        text-decoration: none;
-        font-weight: bold;
-        border: 0.533vw solid #0B97DD;
-    }
+  .menu-icon-hamburger-new{
+    height: 3.466vw;
+    width: 4vw;
+    margin-right: 3.466vw;
+    /*margin-top: 3.2vw;*/
+    margin-top: 2.667vw;
+    float: right;
+  }
 
-    .menuBtnTextNew {
-        height: 9.6vw;
-        margin-top: -.533vw;
-        padding-left: 3.73vw;
-        float: left;
-    }
+  .menu-icon-close-new{
+    height: 3.466vw;
+    width: 4vw;
+    margin-right: 3.466vw;
+    /*margin-top: 3.2vw;*/
+    margin-top: 2.667vw;
+    float: right;
+    display: none;
+  }
 
-    .menuIconHamburgerNew{
-        height: 3.466vw;
-        width: 4vw;
-        margin-right: 3.466vw;
-        /*margin-top: 3.2vw;*/
-        margin-top: 2.667vw;
-        float: right;
-    }
+  .mobile-search-new{
+    width: 100%;
+  }
 
-    .menuIconCloseNew{
-        height: 3.466vw;
-        width: 4vw;
-        margin-right: 3.466vw;
-        /*margin-top: 3.2vw;*/
-        margin-top: 2.667vw;
-        float: right;
-        display: none;
-    }
+  .main-nav-new {
+    width: 100%;
+    display: none;
+  }
 
-    .mobileSearchNew{
-        width: 100%;
-    }
+  .mobile-search-container-new {
+    background-color: #EBEBEB;
+    height: 16vw;
+    margin-bottom: 0;
+    position: relative;
+  }
 
-    .mainNavNew {
-        width: 100%;
-        display: none;
-    }
+  .search-icon-container-new {
+    position: absolute;
+    height: 4vw;
+    width: 4vw;
+    top: 5.9vw;
+    left: 8vw;
+    z-index: 1;
+  }
 
-    .mobileSearchContainerNew {
-        background-color: #EBEBEB;
-        height: 16vw;
-        margin-bottom: 0;
-        position: relative;
-    }
+  .search-icon-new {
+    height: 4vw;
+    width: auto;
+  }
 
-    .searchIconContainerNew {
-        position: absolute;
-        height: 4vw;
-        width: 4vw;
-        top: 5.9vw;
-        left: 8vw;
-        z-index: 1;
-    }
+  .search-input-field-new {
+    position: absolute;
+    margin-top: 2.93vw;
+    height: 10.13vw;
+    margin-left: 5.33vw;
+    width: 89.33vw;
+    font-size: 3.73vw;
+    line-height: 4.8vw;
+    color: #666666;
+    text-indent: 7.466vw;
+    border: 0.266vw solid #C4C4C4;
+  }
 
-    .searchIconNew {
-        height: 4vw;
-        width: auto;
-    }
+  .main-nav-new div a {
+    font-size: 4.8vw;
+    border-bottom: 0.266vw solid #DBDBDB;
+    padding-left: 12.8vw;
+    margin-left: 0;
+    text-decoration: none;
+    display: block;
+    height: 16vw;
+    line-height: 16vw;
+  }
 
-    .searchInputFieldNew {
-        position: absolute;
-        margin-top: 2.93vw;
-        height: 10.13vw;
-        width: 89.33vw;
-        margin-left: 5.33vw;
-        font-size: 3.73vw;
-        line-height: 4.8vw;
-        color: #666666;
-        text-indent: 7.466vw;
-        border: 0.266vw solid #C4C4C4;
-    }
+  .nav-link-new {
+    font-weight: bold;
+    color: #0B97DD !important;
+  }
 
-    .mainNavNew div a {
-        font-size: 4.8vw;
-        border-bottom: 0.266vw solid #DBDBDB;
-        padding-left: 12.8vw;
-        margin-left: 0;
-        text-decoration: none;
-        display: block;
-        height: 16vw;
-        line-height: 16vw;
-    }
+  .nav-link-special-new{
+    color: #666666 !important;
+  }
 
-    .navLinkNew {
-        font-weight: bold;
-        color: #0B97DD;
-    }
+  .nav-link-near-icon-new{
+    margin-right: 4vw;
+    height: 4.8vw;
+    width: auto;
+    vertical-align: middle;
+    padding-left: .6vw;
+    margin-top: -1.3vw;
+  }
 
-    .navLinkSpecialNew{
-        color: #666666;
-    }
-
-    .navLinkNearIconNew{
-        margin-right: 4vw;
-        height: 4.8vw;
-        width: auto;
-        vertical-align: middle;
-        padding-left: .6vw;
-        margin-top: -1.3vw;
-    }
-
-    .navLinkCalendarIconNew{
-        margin-right: 3.2vw;
-        height: 4.8vw;
-        width: auto;
-        vertical-align: middle;
-        margin-top: -1.3vw;
-    }
-
-    .test{
-        height: 200px;
-    }
+  .nav-link-calendar-icon-new{
+    margin-right: 3.2vw;
+    height: 4.8vw;
+    width: auto;
+    vertical-align: middle;
+    margin-top: -1.3vw;
+  }
 }
-
-
