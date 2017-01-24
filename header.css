@@ -4,68 +4,231 @@ body {
     margin: auto;
 }
 
-.header {
-    background-color: white;
-    height: 103px;
-    width: 960px;
-    margin: auto;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+@media screen and (min-width: 768px){
+    .mobileHeaderContainerNew {
+        display: none;
+    }
+
+    .header {
+        background-color: white;
+        height: 103px;
+        width: 960px;
+        margin: auto;
+        box-sizing: border-box;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    /*navbar container*/
+    .navbar {
+        position: relative;
+        height: 103px;
+        width: 960px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 169px;
+        height: auto;
+        left: 0;
+        bottom: 21px;
+    }
+
+    /*main nav bar*/
+    .main-nav {
+        position: absolute;
+        font-weight: bold;
+        bottom: 26px;
+        right: 0;
+    }
+
+    .main-nav > a {
+        color: #0B97DD;
+        font-size: 17px;
+        line-height: 18px;
+        margin-left: 14px;
+    }
+
+    .main-nav > a:first-child {
+        margin-left: 0;
+    }
+
+    /*mini nav bar*/
+    .mini-nav{
+        position: absolute;
+        top: 29px;
+        right: 0;
+    }
+
+    .mini-nav > a {
+        color: #757575;
+        font-size: 13px;
+        line-height: 14px;
+        margin-left: 11px;
+    }
+
+    .mini-nav > i {
+        color: #757575;
+        font-size: 13px;
+        line-height: 14px;
+        margin-left: 11px;
+    }
 }
 
-/*navbar container*/
-.navbar {
-    position: relative;
-    height: 103px;
-    width: 960px;
-}
 
-.logo {
-    position: absolute;
-    width: 169px;
-    height: auto;
-    left: 0;
-    bottom: 21px;
-}
 
-/*main nav bar*/
-.main-nav {
-    position: absolute;
-    font-weight: bold;
-    bottom: 26px;
-    right: 0;
-}
+@media screen and (max-width:768px) {
 
-.main-nav > a {
-    color: #0B97DD;
-    font-size: 17px;
-    line-height: 18px;
-    margin-left: 14px;
-}
+    .header{
+        display: none;
+    }
 
-.main-nav > a:first-child {
-    margin-left: 0;
-}
+    body {
+        margin: 0;
+    }
 
-/*mini nav bar*/
-.mini-nav{
-    position: absolute;
-    top: 29px;
-    right: 0;
-}
+    .mobileHeaderContainerNew {
+        font-family: "Source Sans Pro";
+        width: 100%;
+    }
 
-.mini-nav > a {
-    color: #757575;
-    font-size: 13px;
-    line-height: 14px;
-    margin-left: 11px;
-}
+    .mobileMainHeaderNew {
+        height: 16vw;
+        box-shadow: 0 0.266vw 0 0 #EBEBEB;
+    }
 
-.mini-nav > i {
-    color: #757575;
-    font-size: 13px;
-    line-height: 14px;
-    margin-left: 11px;
+    .logoNew {
+        position: absolute;
+        height: 9.6vw;
+        width: auto;
+        left: 5.33vw;
+        top: 3.2vw;
+    }
+
+    .menuBtnNew {
+        position: absolute;
+        right: 5.33vw;
+        top: 3.2vw;
+        /*width: 24vw;*/
+        /*height: 9.6vw;*/
+        width: 22.934vw;
+        height: 8.534vw;
+        font-size: 3.2vw;
+        line-height: 9.6vw;
+        color: #0B97DD;
+        text-decoration: none;
+        font-weight: bold;
+        border: 0.533vw solid #0B97DD;
+    }
+
+    .menuBtnTextNew {
+        height: 9.6vw;
+        margin-top: -.533vw;
+        padding-left: 3.73vw;
+        float: left;
+    }
+
+    .menuIconHamburgerNew{
+        height: 3.466vw;
+        width: 4vw;
+        margin-right: 3.466vw;
+        /*margin-top: 3.2vw;*/
+        margin-top: 2.667vw;
+        float: right;
+    }
+
+    .menuIconCloseNew{
+        height: 3.466vw;
+        width: 4vw;
+        margin-right: 3.466vw;
+        /*margin-top: 3.2vw;*/
+        margin-top: 2.667vw;
+        float: right;
+        display: none;
+    }
+
+    .mobileSearchNew{
+        width: 100%;
+    }
+
+    .mainNavNew {
+        width: 100%;
+        display: none;
+    }
+
+    .mobileSearchContainerNew {
+        background-color: #EBEBEB;
+        height: 16vw;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .searchIconContainerNew {
+        position: absolute;
+        height: 4vw;
+        width: 4vw;
+        top: 5.9vw;
+        left: 8vw;
+        z-index: 1;
+    }
+
+    .searchIconNew {
+        height: 4vw;
+        width: auto;
+    }
+
+    .searchInputFieldNew {
+        position: absolute;
+        margin-top: 2.93vw;
+        height: 10.13vw;
+        width: 89.33vw;
+        margin-left: 5.33vw;
+        font-size: 3.73vw;
+        line-height: 4.8vw;
+        color: #666666;
+        text-indent: 7.466vw;
+        border: 0.266vw solid #C4C4C4;
+    }
+
+    .mainNavNew div a {
+        font-size: 4.8vw;
+        border-bottom: 0.266vw solid #DBDBDB;
+        padding-left: 12.8vw;
+        margin-left: 0;
+        text-decoration: none;
+        display: block;
+        height: 16vw;
+        line-height: 16vw;
+    }
+
+    .navLinkNew {
+        font-weight: bold;
+        color: #0B97DD;
+    }
+
+    .navLinkSpecialNew{
+        color: #666666;
+    }
+
+    .navLinkNearIconNew{
+        margin-right: 4vw;
+        height: 4.8vw;
+        width: auto;
+        vertical-align: middle;
+        padding-left: .6vw;
+        margin-top: -1.3vw;
+    }
+
+    .navLinkCalendarIconNew{
+        margin-right: 3.2vw;
+        height: 4.8vw;
+        width: auto;
+        vertical-align: middle;
+        margin-top: -1.3vw;
+    }
+
+    .test{
+        height: 200px;
+    }
 }
 
 
