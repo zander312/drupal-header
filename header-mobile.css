@@ -13,11 +13,18 @@
   .headerContainerNew {
     font-family: "Source Sans Pro";
     width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 161vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .mainHeaderNew {
     height: 16vw;
     box-shadow: 0 0.266vw 0 0 #EBEBEB;
+    background-color: #ffffff;
   }
 
   .logoNew {
@@ -77,6 +84,7 @@
   .mainNavNew {
     width: 100%;
     display: none;
+    background-color: #ffffff;
   }
 
   .mobileSearchContainerNew {
@@ -151,6 +159,7 @@
   }
 
   .test{
+    margin-top: 16vw;
     height: 200px;
   }
 }
