@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $(".main-btn-new, .active-dropdown-new, .main-menu-new").hover(function(){
-    if($(this).hasClass("active-dropdown-new")){
-      toggleMenu($(this))
-    }
-  })
+  // $(".main-btn-new, .active-dropdown-new, .main-menu-new").hover(function(){
+  //   if($(this).hasClass("active-dropdown-new")){
+  //     toggleMenu($(this))
+  //   }
+  // })
 
 
   //mobile jquery

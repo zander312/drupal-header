@@ -56,23 +56,30 @@ body {
         position: absolute;
         font-weight: bold;
         top: 59px;
-        bottom: 0px;
+        bottom: 0;
         right: 0;
+        margin: 0;
     }
 
-    .main-nav-new > li {
-        display: inline-block;
+    .main-nav-new > ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
     }
 
-    .main-btn-new{
+    .main-nav-new > ul > li {
+        float: right;
+    }
+
+    .main-btn-new {
         position: relative;
         top: 0;
         display: inline-block;
-        margin-right: -3;
         line-height: 18px;
         padding-left: 7px;
         padding-right: 7px;
-        height: 44px;
+        height: 43px;
         cursor: pointer;
     }
 
@@ -107,13 +114,15 @@ body {
 
     /*dropdown menu*/
     .main-menu-new {
-        visibility: hidden;
         position: absolute;
-        top: 103px;
         border-top: 5px solid #0B97DD;
         background-color: white;
         height: 359px;
         width: 960px;
+        left: -793px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     /*mini nav bar*/
