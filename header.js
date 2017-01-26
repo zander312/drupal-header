@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $(".main-btn-new, .active-dropdown-new, .main-menu-new").hover(function(){
+    if($(this).hasClass("active-dropdown-new")){
+      toggleMenu($(this))
+    }
+  })
+
+
+  //mobile jquery
   $(".menuBtnNew").click(function(e){
     e.preventDefault();
     $(".mainNavNew").slideToggle();
@@ -19,6 +27,23 @@ $(document).ready(function(){
   })
 });
 
+function toggleMenu(thisObj){
+  var index = thisObj.index()
+  var menuElement = $($(".main-menu-new")[index])
+  menuElement.toggleClass( "active" )
+}
+
+function toggleFocusMenu(thisObj){
+  var index = thisObj.index()
+  var prevMenuElement = $($(".main-menu-new")[index-1])
+  var nextMenuElement = $($(".main-menu-new")[index+1])
+  var menuElement = $($(".main-menu-new")[index])
+  prevMenuElement.removeClass("active")
+  nextMenuElement.removeClass("active")
+  if(thisObj.hasClass("active-dropdown-new")){
+    menuElement.addClass( "active" )
+  }
+}
 
 function createSearchURI(searchParam){
   var searchRes = encodeURI("/tools/search-result-page?search=" + searchParam)
