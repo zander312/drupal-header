@@ -29,7 +29,7 @@ body {
 
     .header-new {
         background-color: white;
-        height: 103px;
+        height: 107px;
         width: 960px;
         margin: auto;
         box-sizing: border-box;
@@ -64,12 +64,19 @@ body {
     .main-nav-new > ul {
         margin: 0;
         padding: 0;
-        overflow: hidden;
+
         list-style-type: none;
     }
 
+
     .main-nav-new > ul > li {
+        /*floats the navbar ro the right*/
         float: right;
+    }
+
+    .main-nav-new > ul > li {
+        /*reverses the order of the navs so they are semantic and arranged left to right*/
+        float: left;
     }
 
     .main-btn-new {
@@ -81,6 +88,10 @@ body {
         padding-right: 7px;
         height: 43px;
         cursor: pointer;
+    }
+
+    .main-btn-new:focus {
+        outline: solid #0B97DD 2px;
     }
 
     .main-btn-new > span {
@@ -114,16 +125,39 @@ body {
 
     /*dropdown menu*/
     .main-menu-new {
-        position: absolute;
+        position: fixed;
+        visibility: hidden;
         border-top: 5px solid #0B97DD;
         background-color: white;
         height: 359px;
         width: 960px;
-        left: -793px;
+        left: 379px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    .main-nav-new > ul > li:hover > a + ul {
+        visibility: visible;
+    }
+
+    .main-nav-new > ul > li:hover > a > .triangle-new {
+        visibility: visible;
+    }
+
+    /*.main-btn-new:hover + ul {*/
+    /*visibility: visible;*/
+    /*}*/
+
+    /*.main-btn-new:focus + ul {*/
+    /*visibility: visible;*/
+    /*}*/
+
+    /*.main-menu-new:hover {*/
+    /*visibility: visible;*/
+    /*}*/
+
+
 
     /*mini nav bar*/
     .mini-nav-new{
