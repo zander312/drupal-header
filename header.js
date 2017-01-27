@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 
+  focusInMenu();
+
 
   //mobile jquery
   $(".menuBtnNew").click(function(e){
@@ -23,8 +25,15 @@ $(document).ready(function(){
   })
 });
 
-
 function createSearchURI(searchParam){
   var searchRes = encodeURI("/tools/search-result-page?search=" + searchParam)
   return searchRes
 }
+
+function focusInMenu(){
+  $(".main-btn-new").on('focusin', function(e){
+    $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden")
+    $(this).siblings(".main-menu-new").css("visibility", "visible")
+  });
+}
+
