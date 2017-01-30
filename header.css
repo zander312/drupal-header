@@ -3,21 +3,17 @@ body {
     width:960px;
     height: 3000px;
     margin: auto;
+    background-color: red;
 }
 
 @media screen and (min-width: 959px){
 
-    /*globals*/
     .remove-a-style {
         text-decoration: none;
     }
 
-
-    /*REMOVES OUTLINE WHEN CLICKING LINKS*/
-
-
-
     .mobileHeaderContainerNew {
+        /*hides mobile header*/
         display: none;
     }
 
@@ -47,6 +43,7 @@ body {
 
     /*main nav bar*/
     .main-nav-new {
+        /*container for bottom nav bar*/
         position: absolute;
         font-weight: bold;
         top: 59px;
@@ -56,9 +53,9 @@ body {
     }
 
     .main-nav-new > ul {
+        /*remove styling for ul in bottom nav*/
         margin: 0;
         padding: 0;
-
         list-style-type: none;
     }
 
@@ -74,6 +71,7 @@ body {
     }
 
     .main-btn-new {
+        /*container for bottom nav*/
         position: relative;
         top: 0;
         display: inline-block;
@@ -83,9 +81,8 @@ body {
         cursor: pointer;
     }
 
-
-
     .main-btn-new > span {
+        /*text for */
         color: #0B97DD;
         font-size: 17px;
         text-decoration: none;
@@ -135,18 +132,6 @@ body {
     .main-nav-new > ul > li:hover > a > .triangle-new {
         visibility: visible;
     }
-
-    /*.main-btn-new:hover + ul {*/
-    /*visibility: visible;*/
-    /*}*/
-
-    /*.main-btn-new:focus + ul {*/
-    /*visibility: visible;*/
-    /*}*/
-
-    /*.main-menu-new:hover {*/
-    /*visibility: visible;*/
-    /*}*/
 
 
 
