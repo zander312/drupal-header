@@ -11,14 +11,17 @@
         <img class="logo-new" src="./assets/logo.png"/>
 
         <nav role="navigation" aria-label="mini navigation" class="mini-nav-new">
-          <a tabindex=1 class="remove-a-style">Translate</a>
-          <a tabindex=2 class="remove-a-style">SBA En Español</a>
-          <a tabindex=3 class="remove-a-style">For Lenders</a>
-          <a tabindex=4 class="remove-a-style">Newsroom</a>
-          <a tabindex=5 class="remove-a-style">Contact Us</a>
-          <a tabindex=6 class="remove-a-style">Register</a>
-          <a tabindex=7 class="remove-a-style">Log In</a>
-          <i class="fa fa-search remove-a-style" aria-hidden="true"></i>
+          <a tabindex=0 class="remove-a-style" href="#">Translate</a>
+          <a tabindex=0 class="remove-a-style" href="https://es.sba.gov/">SBA En Español</a>
+          <a tabindex=0 class="remove-a-style" href="/for-lenders">For Lenders</a>
+          <a tabindex=0 class="remove-a-style" href="/about-sba/sba-newsroom">Newsroom</a>
+          <a tabindex=0 class="remove-a-style" href="/about-sba/what-we-do/contact-sba">Contact Us</a>
+          <a tabindex=0 class="remove-a-style" href="/user/register">Register</a>
+          <a tabindex=0 class="remove-a-style" href="/user/login?destination=about-sba%2Fwhat-we-do%2Fcontact-sba">Log In</a>
+          <i id="search-toggle" tabindex=0 class="fa fa-search remove-a-style search-icon" aria-hidden="true" href="#"></i>
+          <form id="search-bar">
+            <input id="search-input" type='text' placeholder='Search'><i id="search-btn" tabindex=0 class="fa fa-search remove-a-style search-icon" aria-hidden="true"></i>
+          </form>
         </nav><br/>
 
         <nav role="menubar" aria-label="main navigation bar with dropdown submenus" class="main-nav-new">
@@ -211,14 +214,6 @@
                 </li>
               </ul>
             </li>
-
-
-
-
-
-
-
-
 
 
           </ul>
