@@ -1,0 +1,246 @@
+@media screen and (min-width: 959px){
+
+    .normalize-menu-item-new {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .mobileHeaderContainerNew {
+        /*hides mobile header*/
+        display: none;
+    }
+
+    .header-new {
+        background-color: white;
+        height: 107px;
+        width: 960px;
+        margin: auto;
+        box-sizing: border-box;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: -0.4px !important;
+    }
+
+    /*NAVBAR CONTAINER*/
+    .navbar-new {
+        position: relative;
+        height: 103px;
+        width: 960px;
+    }
+
+    .logo-new {
+        position: absolute;
+        width: 169px;
+        height: auto;
+        left: 0;
+        bottom: 18px;
+    }
+
+    /*BOTTOM NAV BAR*/
+    .main-nav-new {
+        /*container for bottom nav bar*/
+        position: absolute;
+        font-weight: bold;
+        width: 740px;
+        top: 59px;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .main-nav-new > ul {
+        /*remove styling for ul in bottom nav*/
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+
+    .main-nav-new > ul > li {
+        /*floats the navbar ro the right*/
+        float: right;
+    }
+
+    .main-nav-new > ul > li {
+        /*reverses the order of the navs so they are semantic and arranged left to right*/
+        float: left;
+    }
+
+    .main-btn-new {
+        /*container for menu button*/
+        position: relative;
+        top: 0;
+        display: inline-block;
+        padding-left: 7px;
+        padding-right: 7px;
+        height: 43px;
+        cursor: pointer;
+    }
+
+    .main-nav-new > ul > li:first-child > a {
+        /*removes left padding for the first main nav button*/
+        padding-left: 0;
+    }
+
+    .main-nav-new > ul > li:last-child > a {
+        /*removes right padding for the last main nav button*/
+        padding-right: 0;
+    }
+
+    .main-btn-new > span {
+        /*text for menu button*/
+        color: #0B97DD;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .main-btn-new > span:first-child {
+        margin-left: 0;
+    }
+
+    .triangle-new {
+        /*little triangle in menu button*/
+        visibility: hidden;
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-bottom: 8px solid #0B97DD;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 0;
+    }
+
+    .main-btn-new:hover .triangle-new {
+        visibility: visible;
+    }
+
+    /*DROPDOWN MENU*/
+    .main-menu-new {
+        position: absolute;
+        visibility: hidden;
+        border-top: 5px solid #0B97DD;
+        background-color: white;
+        padding: 0;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        width: 960px;
+        left: -220px;
+        list-style-type: none;
+    }
+
+    .main-nav-new > ul > li:hover > a + ul {
+        visibility: visible !important;
+    }
+
+    .main-nav-new > ul > li:hover > a > .triangle-new {
+        visibility: visible !important;
+    }
+
+    /*CONTENT INSIDE DROPDOWN MENU*/
+    .column-new {
+        /*columns for dropdown*/
+        float: left;
+        margin: 0;
+        width: 33%;
+        padding-left: 50px;
+        list-style-type: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .column-new > li {
+        /*all elements in drodown*/
+        text-decoration: none;
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    .column-new > li > h2 {
+        /*dopdown headers*/
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: -0.4px !important;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0B97DD;
+    }
+
+    .column-new > li > h2 > a {
+        /*dopdown headers*/
+        text-decoration: none;
+        color: #0B97DD;
+    }
+
+    .column-new > li > h2 > a:hover {
+        /*dopdown headers*/
+        text-decoration: underline;
+        color: #006BA2;
+    }
+
+    .column-new > li > a {
+        /*dopdown links*/
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .column-new > li > a:hover {
+        /*dopdown links*/
+        text-decoration: underline;
+    }
+
+    /*TOP MINI NAV BAR*/
+    .mini-nav-new{
+        position: absolute;
+        top: 29px;
+        right: 0;
+    }
+
+    .mini-nav-link-new {
+        color: #757575;
+        font-size: 13px;
+        line-height: 14px;
+        margin-left: 11px;
+        text-decoration: none;
+    }
+
+    .mini-nav-link-new:hover {
+        color: #333;
+    }
+
+    .search-icon-new {
+        cursor: pointer;
+        color: #757575;
+        font-size: 13px;
+        line-height: 14px;
+        margin-left: 11px;
+        text-decoration: none;
+    }
+
+    .search-icon-new:hover {
+        color: #333;
+    }
+
+    #search-bar-new {
+        display: inline;
+        margin-left: 11px;
+    }
+
+    #search-input-new {
+        margin-right: 11px;
+        width: 200px;
+    }
+
+    #google_translate_element {
+        display: inline-block;
+        height: 22px;
+    }
+}

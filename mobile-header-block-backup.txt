@@ -1,0 +1,43 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/sites/all/themes/smallbizd7/css/header.css">
+</head>
+
+  <div class="mobile-header-container-new">
+    <div class="mobile-main-header-new">
+      <a href ="/">
+        <img class="logo-new" alt="Small Business Administration" src="/sites/all/themes/smallbizd7/images/SBA_logo.png"/>
+      </a>
+      <a href="" class="menu-btn-new">
+        <div>
+          <div class="menu-btn-text-new">MENU</div>
+          <img class="menu-icon-hamburger-new" alt="" src="/sites/all/themes/smallbizd7/hamburger-icon.svg"/>
+          <img class="menu-icon-close-new" alt="" src="/sites/all/themes/smallbizd7/close.svg"/>
+        </div>
+      </a>
+    </div>
+    <nav class="main-nav-new">
+      <form class=mobile-search-container-new>
+        <div class="search-icon-container-new">
+          <img class="search-icon-new" alt="Search" src="/sites/all/themes/smallbizd7/search-icon.svg"/>
+        </div>
+        <input type = "text" class = "search-input-field-new" placeholder="Search SBA.gov"></input>
+      </form>
+      <div><a class="nav-link-new" href="/starting-managing-business">Starting & Managing</a></div>
+      <div><a class="nav-link-new" href="/loans-grants">Loans & Grants</a></div>
+      <div><a class="nav-link-new" href="/contracting">Contracting</a></div>
+      <div><a class="nav-link-new" href="/tools/sba-learning-center/search/training">Learning Center</a></div>
+      <div><a class="nav-link-new" href="/tools/local-assistance">Local Assistance</a></div>
+      <div><a class="nav-link-new" href="/about-sba">About Us</a></div>
+      <div><a class="nav-link-special-new" href="/tools/local-assistance#locations-page">
+        <img class="nav-link-near-icon-new" src="/sites/all/themes/smallbizd7/near-you.svg" alt=""/>
+        SBA Near You
+      </a></div>
+      <div><a class="nav-link-special-new" href="/tools/events#events-page">
+        <img class="nav-link-calendar-icon-new" src="/sites/all/themes/smallbizd7/calendar.svg" alt=""/>
+        Small Business Events
+      </a></div>
+    </nav>
+  </div>
+
+<script src="/sites/all/themes/smallbizd7/scripts/header.js"></script>
