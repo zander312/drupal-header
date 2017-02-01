@@ -3,23 +3,25 @@ $(document).ready(function(){
 
   focusInMenu();
 
+  //hide search bar on page load
   $("#search-bar").hide();
-  
+
+  //search submission
   $("#search-bar").submit(function (e) {
     e.preventDefault()
     var searchValue = $("#search-input").val();
     var searchURI = createSearchURI(searchValue)
     window.location = searchURI
   })
-  
+
+  //toggles search bar
   $(document).on('click', function(e){
-    console.log(e.target);
-    if(e.target.id == "search-toggle"){
+    if(e.target.id == "search-toggle" || e.target.id == "search-toggle-link"){
       $("#search-toggle").hide();
       $("#search-bar").show();
+      $("#search-input").focus();
     }
     else if (e.target.id == "search-btn"){
-      console.log("search")
       var searchValue = $("#search-input").val();
       var searchURI = createSearchURI(searchValue)
       window.location = searchURI
@@ -27,6 +29,24 @@ $(document).ready(function(){
     else if (e.target.id !== "search-btn" && e.target.id !== "search-input"){
       $("#search-bar").hide();
       $("#search-toggle").show();
+    }
+  });
+
+  //toggle dropdown menu when tabbing
+  $(".main-btn-new").on('focusin', function(e){
+    $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden");
+    $(this).siblings(".main-menu-new").css("visibility", "visible");
+  });
+
+  //hides dropdown menu when tabbing out of main nav
+  $(document).on('focusin', function(e){
+    if(e.target.id == "search-toggle" || e.target.id == "search-toggle-link"){
+      $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden")
+    }
+  });
+  $(document).on('focusout', function(e){
+    if(e.target.id == "last-dropdown-link"){
+      $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden")
     }
   });
 
@@ -61,21 +81,11 @@ function createSearchURI(searchParam){
 
 function focusInMenu(){
   $(".main-btn-new").on('focusin', function(e){
-    $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden")
-    $(this).siblings(".main-menu-new").css("visibility", "visible")
+    $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden");
+    $(this).siblings(".main-menu-new").css("visibility", "visible");
   });
 }
 
-function toggleSearch(){
 
-}
-
-// function submitSearch(){
-//   $("#search-btn").click( function(){
-//     console.log("oioioioioioioioi")
-//   });
-// }
-
-// ("<input type='text' name='search-bar' placeholder='Search'><a id='search-btn'><i tabindex=0 class='fa fa-search remove-a-style' aria-hidden='true'></i></a>")
 
 

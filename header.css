@@ -146,11 +146,11 @@ body {
     }
 
     .main-nav-new > ul > li:hover > a + ul {
-        visibility: visible;
+        visibility: visible !important;
     }
 
     .main-nav-new > ul > li:hover > a > .triangle-new {
-        visibility: visible;
+        visibility: visible !important;
     }
 
     /*CONTENT INSIDE DROPDOWN MENU*/
@@ -217,7 +217,7 @@ body {
         right: 0;
     }
 
-    .mini-nav-new > a {
+    .mini-nav-link {
         color: #757575;
         font-size: 13px;
         line-height: 14px;
@@ -225,7 +225,7 @@ body {
         text-decoration: none;
     }
 
-    .mini-nav-new > a:hover {
+    .mini-nav-link:hover {
         color: #333;
     }
 
