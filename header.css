@@ -8,12 +8,7 @@ body {
 
 @media screen and (min-width: 959px){
 
-    /*!!!!!!!!!!!!!!!!!!!!!!!TEST HEADER REMOVE AFTER DEV*/
-    .test-dropdown {
-        visibility: visible !important;
-    }
-
-    .normalize-menu-item {
+    .normalize-menu-item-new {
         text-decoration: none;
         list-style: none;
     }
@@ -251,8 +246,12 @@ body {
         margin-right: 11px;
         width: 200px;
     }
-}
 
+    #google_translate_element {
+        display: inline-block;
+        height: 22px;
+    }
+}
 
 
 @media screen and (max-width:959px) {

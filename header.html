@@ -2,6 +2,12 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700,800,900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/ac6d4376da.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -11,7 +17,8 @@
         <img class="logo-new" src="./assets/logo.png"/>
 
         <nav role="navigation" aria-label="mini navigation" class="mini-nav-new">
-          <a tabindex=0 class="mini-nav-link" href="#">Translate</a>
+          <div id="google_translate_element"></div>
+          <a tabindex=0 id="translate-toggle-new" class="mini-nav-link" href="#">Translate</a>
           <a tabindex=0 class="mini-nav-link" href="https://es.sba.gov/">SBA En Español</a>
           <a tabindex=0 class="mini-nav-link" href="/for-lenders">For Lenders</a>
           <a tabindex=0 class="mini-nav-link" href="/about-sba/sba-newsroom">Newsroom</a>
@@ -29,12 +36,12 @@
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="Starting & Managing" class="main-btn-new normalize-menu-item" href="/starting-managing-business">
+              <a tabindex=0 aria-haspopup="true" title="Starting & Managing" class="main-btn-new normalize-menu-item-new" href="/starting-managing-business">
                 <span>Starting & Managing</span>
                 <div class="triangle-new"></div>
               </a>
               <ul aria-label="submenu" class="main-menu-new">
-                <li class="normalize-menu-item">
+                <li class="normalize-menu-item-new">
                   <ul class="column-new">
                     <li><h2 class="dropdown-header"><a tabindex=0 href="/starting-business">Starting a Business</a></h2></li>
                     <li><a tabindex=0 href="/starting-business/how-start-business">How to Start a Business</a></li>
@@ -66,12 +73,12 @@
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="Loans & Grants" class="main-btn-new normalize-menu-item" href="/loans-grants">
+              <a tabindex=0 aria-haspopup="true" title="Loans & Grants" class="main-btn-new normalize-menu-item-new" href="/loans-grants">
                 <span>Loans & Grants</span>
                 <div class="triangle-new"></div>
               </a>
               <ul aria-label="submenu" class="main-menu-new">
-                <li class="normalize-menu-item">
+                <li class="normalize-menu-item-new">
                   <ul class="column-new">
                     <li><h2 class="dropdown-header"><a tabindex=0 href="/loans-grants/see-what-sba-offers">See What SBA Offers</a></h2></li>
                     <li><a tabindex=0 href="/loans-grants/see-what-sba-offers/sba-loan-programs">SBA Loan Programs</a></li>
@@ -97,12 +104,12 @@
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="Contracting" class="main-btn-new normalize-menu-item" href="/contracting">
+              <a tabindex=0 aria-haspopup="true" title="Contracting" class="main-btn-new normalize-menu-item-new" href="/contracting">
                 <span>Contracting</span>
                 <div class="triangle-new"></div>
               </a>
               <ul aria-label="submenu" class="main-menu-new">
-                <li class="normalize-menu-item">
+                <li class="normalize-menu-item-new">
                   <ul class="column-new">
                     <li><h2 class="dropdown-header"><a tabindex=0 href="/contracting/what-government-contracting">What is Government Contracting?</a></h2></li>
                     <li><a tabindex=0 href="/contracting/what-government-contracting/overview">Overview</a></li>
@@ -144,19 +151,19 @@
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="Learning Center" class="main-btn-new normalize-menu-item" href="/tools/sba-learning-center/search/training">
+              <a tabindex=0 aria-haspopup="true" title="Learning Center" class="main-btn-new normalize-menu-item-new" href="/tools/sba-learning-center/search/training">
                 <span>Learning Center</span>
               </a>
             </li>
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="Local Assistance" class="main-btn-new normalize-menu-item" href="/contracting">
+              <a tabindex=0 aria-haspopup="true" title="Local Assistance" class="main-btn-new normalize-menu-item-new" href="/contracting">
                 <span>Local Assistance</span>
                 <div class="triangle-new"></div>
               </a>
               <ul aria-label="submenu" class="main-menu-new">
-                <li class="normalize-menu-item">
+                <li class="normalize-menu-item-new">
                   <ul class="column-new">
                     <li><h2 class="dropdown-header"><a tabindex=0 href="/tools/local-assistance">SBA Offices and Resource Partners</a></h2></li>
                     <li><a tabindex=0 href="/tools/local-assistance/districtoffices">SBA District Offices</a></li>
@@ -176,12 +183,12 @@
 
 
             <li>
-              <a tabindex=0 aria-haspopup="true" title="About Us" class="main-btn-new normalize-menu-item" href="/contracting">
+              <a tabindex=0 aria-haspopup="true" title="About Us" class="main-btn-new normalize-menu-item-new" href="/contracting">
                 <span>About Us</span>
                 <div class="triangle-new"></div>
               </a>
               <ul aria-label="submenu" class="main-menu-new">
-                <li class="normalize-menu-item">
+                <li class="normalize-menu-item-new">
                   <ul class="column-new">
                     <li><h2 class="dropdown-header"><a tabindex=0 href="/about-sba/what-we-do">What We Do</a></h2></li>
                     <li><a tabindex=0 href="/about-sba/what-we-do/mission">Mission</a></li>
@@ -262,6 +269,8 @@
 
     <img class="banner" src="./assets/banner-image.jpeg">
     <a tabindex=0 href="#"><h1>body body body</h1></a>
+
+
 
 
 </body>

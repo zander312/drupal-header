@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 
-  focusInMenu();
-
   //hide search bar on page load
   $("#search-bar").hide();
+  //hide google translate on page load
+  $("#google_translate_element").hide();
 
   //search submission
   $("#search-bar").submit(function (e) {
@@ -30,6 +30,12 @@ $(document).ready(function(){
       $("#search-bar").hide();
       $("#search-toggle").show();
     }
+  });
+
+  //toggles google_translate_element
+  $("#translate-toggle-new").on('click', function(){
+    $(this).hide();
+    $("#google_translate_element").show();
   });
 
   //toggle dropdown menu when tabbing
@@ -79,12 +85,6 @@ function createSearchURI(searchParam){
   return searchRes
 }
 
-function focusInMenu(){
-  $(".main-btn-new").on('focusin', function(e){
-    $(".main-btn-new").siblings(".main-menu-new").css("visibility", "hidden");
-    $(this).siblings(".main-menu-new").css("visibility", "visible");
-  });
-}
 
 
 
