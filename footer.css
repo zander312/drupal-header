@@ -39,15 +39,15 @@
 
   }
 
-  .footer-new a {
-    color: #333333;
+  .footer-new a, .footer-new a:hover {
+    color: #333333 !important;
     text-decoration: none;
     font-size: 16px;
     line-height: 18px;
   }
 
   .footer-new h4 {
-    color: #333333;
+    color: #333333 !important;
     font-size: 16px;
     font-weight: bold;
     line-height: 16px;
@@ -130,7 +130,7 @@
     font-size: 4.26vw;
     line-height: 4.26vw;
     text-decoration: none;
-    color: #333333;
+    color: #333333 !important;
     width: 42.66vw;
     margin-left: 3.33vw;
     margin-top: 5.73vw;
@@ -142,7 +142,7 @@
     font-size: 4.26vw;
     line-height: 4.26vw;
     text-decoration: none;
-    color: #333333;
+    color: #333333 !important;
     width: 42.66vw;
     margin-left: 3.33vw;
     margin-top: 0;
@@ -150,7 +150,7 @@
   }
 
   .small-links-new a:hover{
-    color: #333333;
+    color: #333333 !important;
     text-decoration: none;
   }
 
