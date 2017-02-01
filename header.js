@@ -2,14 +2,14 @@ $(document).ready(function(){
 
 
   //hide search bar on page load
-  $("#search-bar").hide();
+  $("#search-bar-new").hide();
   //hide google translate on page load
   $("#google_translate_element").hide();
 
   //search submission
-  $("#search-bar").submit(function (e) {
+  $("#search-bar-new").submit(function (e) {
     e.preventDefault()
-    var searchValue = $("#search-input").val();
+    var searchValue = $("#search-input-new").val();
     var searchURI = createSearchURI(searchValue)
     window.location = searchURI
   })
@@ -18,16 +18,16 @@ $(document).ready(function(){
   $(document).on('click', function(e){
     if(e.target.id == "search-toggle" || e.target.id == "search-toggle-link"){
       $("#search-toggle").hide();
-      $("#search-bar").show();
-      $("#search-input").focus();
+      $("#search-bar-new").show();
+      $("#search-input-new").focus();
     }
-    else if (e.target.id == "search-btn"){
-      var searchValue = $("#search-input").val();
+    else if (e.target.id == "search-btn-new"){
+      var searchValue = $("#search-input-new").val();
       var searchURI = createSearchURI(searchValue)
       window.location = searchURI
     }
-    else if (e.target.id !== "search-btn" && e.target.id !== "search-input"){
-      $("#search-bar").hide();
+    else if (e.target.id !== "search-btn-new" && e.target.id !== "search-input-new"){
+      $("#search-bar-new").hide();
       $("#search-toggle").show();
     }
   });

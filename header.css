@@ -212,7 +212,7 @@ body {
         right: 0;
     }
 
-    .mini-nav-link {
+    .mini-nav-link-new {
         color: #757575;
         font-size: 13px;
         line-height: 14px;
@@ -220,11 +220,11 @@ body {
         text-decoration: none;
     }
 
-    .mini-nav-link:hover {
+    .mini-nav-link-new:hover {
         color: #333;
     }
 
-    .search-icon {
+    .search-icon-new {
         cursor: pointer;
         color: #757575;
         font-size: 13px;
@@ -233,16 +233,16 @@ body {
         text-decoration: none;
     }
 
-    .search-icon:hover {
+    .search-icon-new:hover {
         color: #333;
     }
 
-    #search-bar {
+    #search-bar-new {
         display: inline;
         margin-left: 11px;
     }
 
-    #search-input {
+    #search-input-new {
         margin-right: 11px;
         width: 200px;
     }
