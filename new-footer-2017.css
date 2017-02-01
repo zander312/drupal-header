@@ -193,6 +193,7 @@
     padding-bottom: 8vw;
     color: #333333;
     clear: both;
+    line-height: normal;
   }
 
   .address-small-new div {
@@ -203,6 +204,6 @@
   }
 
   .address-small-new div:last-of-type{
-    padding-top: 1.6vw;
+    margin-top: 1.6vw;
   }
 }
